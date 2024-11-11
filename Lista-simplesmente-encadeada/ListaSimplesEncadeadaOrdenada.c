@@ -142,7 +142,7 @@ int main()
     No *lista = NULL;
     int opcao, valor;
 
-    while (opcao != 8)
+    while (opcao != 7)
     {
         printf("\nPainel - Lista Simplesmente Encadeada\n");
         printf("1. Inserir \n");
