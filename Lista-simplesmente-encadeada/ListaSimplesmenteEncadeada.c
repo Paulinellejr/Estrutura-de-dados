@@ -134,12 +134,45 @@ void ImprimeLista(No *L)
     }
 }
 
+No *repete(No *L)
+{
+    No *aux1 = L;
+    No *pred = NULL;
+    No *aux2 = NULL;
+    if (L == NULL)
+    {
+        return NULL;
+    }
+
+    while (aux1 != NULL)
+    {
+        pred = aux1;
+        aux2 = aux1->prox;
+        while (aux2 != NULL)
+        {
+            if (aux1->chave == aux2->chave)
+            {
+                pred->prox = aux2->prox; // Remover elemento repetido
+                free(aux2);              // Liberar memória
+                aux2 = pred->prox;       // Continuar com o próximo nó
+            }
+            else
+            {
+                pred = aux2;
+                aux2 = aux2->prox;
+            }
+        }
+        aux1 = aux1->prox;
+    }
+    return L;
+}
+
 int main()
 {
     No *lista = NULL;
     int opcao, valor;
 
-    while (opcao != 8)
+    while (opcao != 9)
     {
         printf("\nPainel - Lista Simplesmente Encadeada\n");
         printf("1. Inserir no início\n");
@@ -193,6 +226,9 @@ int main()
             ImprimeLista(lista);
             break;
         case 8:
+            lista = repete(lista);
+            break;
+        case 9:
             printf("Saindo...\n");
             break;
         default:
