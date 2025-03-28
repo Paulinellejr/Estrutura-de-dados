@@ -30,7 +30,10 @@ The study of data structures is fundamental for understanding algorithms and bui
 
 - **Control Structures**:
   - Stack
-
+  
+- **search algorithm**
+  - Binary search
+    
 ## How to Use
 
 To use the algorithms in this repository, clone the repository and compile the source code files as needed. Here is an example of how to compile and run a C file:
