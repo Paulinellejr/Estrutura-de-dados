@@ -27,6 +27,7 @@ The study of data structures is fundamental for understanding algorithms and bui
 
 - **Heaps**:
   - Max Heap
+  - Fibonacci Heaps 
 
 - **Control Structures**:
   - Stack
