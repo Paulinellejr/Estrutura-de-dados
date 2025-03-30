@@ -20,7 +20,8 @@ The study of data structures is fundamental for understanding algorithms and bui
   - Ordered Singly Linked List
   - Unordered Doubly Linked List
   - Ordered Doubly Linked List
-  - Circular List
+  - Dynamic Circular List
+  - Static circular list
 
 - **Trees**:
   - Binary Search Tree (BST)
