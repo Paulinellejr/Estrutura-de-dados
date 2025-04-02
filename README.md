@@ -37,7 +37,7 @@ The study of data structures is fundamental for understanding algorithms and bui
   - Binary search
 
 - **Sorting**
-  -Selection sort
+  - Selection sort
  
 ## How to Use
 
