@@ -47,16 +47,15 @@ void imprimirVetor(int vetor[], int tamanho)
 // Função principal
 int main()
 {
-    int vetor[] = {10, 7, 8, 9, 1, 5};
-    int tamanho = 6;
+    int Arr[] = {10, 7, 2, 90, 1, 5};
+    int size = 6;
 
-    printf("Vetor original: ");
-    imprimirVetor(vetor, tamanho);
+    printf("Original vector: ");
+    printArray(Arr, size);
+    selectionSort(Arr, size);
 
-    quicksort(vetor, 0, tamanho - 1);
-
-    printf("Vetor ordenado: ");
-    imprimirVetor(vetor, tamanho);
+    printf("Ordered vector: ");
+    printArray(Arr, size);
 
     return 0;
 }
