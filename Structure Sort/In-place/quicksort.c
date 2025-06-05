@@ -8,7 +8,7 @@ int particionar(int vetor[], int inicio, int fim)
 
     for (int j = inicio; j < fim; j++)
     {
-        if (vetor[j] < pivo)
+        if (vetor[j] <= pivo)
         {
             i++;
             int temp = vetor[i];
@@ -35,11 +35,11 @@ void quicksort(int vetor[], int inicio, int fim)
 }
 
 // Função auxiliar para imprimir o vetor
-void imprimirVetor(int vetor[], int tamanho)
+void printArray(int A[], int n)
 {
-    for (int i = 0; i < tamanho; i++)
+    for (int i = 0; i < n; i++)
     {
-        printf("%d ", vetor[i]);
+        printf("%d ", A[i]);
     }
     printf("\n");
 }
@@ -52,7 +52,7 @@ int main()
 
     printf("Original vector: ");
     printArray(Arr, size);
-    selectionSort(Arr, size);
+    quicksort(Arr, 0, size);
 
     printf("Ordered vector: ");
     printArray(Arr, size);
